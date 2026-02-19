@@ -7,16 +7,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                navy: '#274259',
+                green: '#73BF8E',
+                yellow: '#F2D022',
+                red: '#F26D6D',
+                neutral: '#F2F2F2',
+              }
+            }
+          }
+        }
+      }
+    </script>
     <style>
       body {
         font-family: 'Inter', sans-serif;
-        background-color: #f8fafc;
+        background-color: #F2F2F2;
         margin: 0;
         padding: 0;
       }
       /* Ensure KaTeX block math doesn't cause weird layout issues */
       .katex-display {
         margin: 0.5em 0 !important;
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 10px;
       }
     </style>
 
@@ -32,7 +59,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="./assets/index-_P23KxQ2.js"></script>
+  <script type="module" crossorigin src="./assets/index-UlOJJnZp.js"></script>
 </head>
   <body>
     <div id="root"></div>
